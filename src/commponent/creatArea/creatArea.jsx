@@ -27,7 +27,7 @@ props.onAdd({ ...note, id: crypto.randomUUID() });
   return (
     <div 
       style={{ backgroundColor: note.color }} // Preview the color
-      className="w-[400px] mb-5 p-4 rounded-md shadow-md relative m-auto transition-colors duration-300"
+      className="w-[350px] mb-5 p-4 rounded-md shadow-md relative m-auto transition-colors duration-300"
     >
       <form onSubmit={submitNote}>
         <input

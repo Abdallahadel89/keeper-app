@@ -4,6 +4,7 @@ import Note from './commponent/note/note'
 import notes from './notes/notes'
 import CreatArea from './commponent/creatArea/creatArea'
 import { useEffect, useState } from 'react'
+import Footer from './commponent/footer/footer'
 
 
 
@@ -30,7 +31,7 @@ function App() {
     });
   }
   return (
-    <div className='bg-gray-200 w-full h-full min-h-screen overflow-hidden'>
+    <div className='bg-gray-200 w-full h-full min-h-screen overflow-hidden relative min-h-screen'>
     <Header></Header>
     <CreatArea onAdd={addNote}></CreatArea>
     {noteList.map((noteItem) => (
@@ -44,6 +45,7 @@ function App() {
       
       />
     ))}
+    <Footer></Footer>
     </div>
   )
 }
